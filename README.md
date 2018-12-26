@@ -10,6 +10,10 @@ Just include the component into your project, include the header file and call u
     
     udp_logging_init( "192.168.0.108", 1337, NULL );
 
+To disable logger, use udp_logging_free()
+
+    udp_logging_free();
+
 On the server execute the logging_server.py file using Python v3:
 
     $ python3 logging_server.py
